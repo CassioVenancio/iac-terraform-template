@@ -20,3 +20,10 @@ module "project" {
   project_id = var.project_id
 }
 
+module "registry" {
+  source = "./registry/"
+
+  project_id    = var.project_id
+  region        = var.region
+  repository_id = var.repository_id
+}

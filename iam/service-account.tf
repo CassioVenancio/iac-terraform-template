@@ -8,7 +8,9 @@ resource "google_project_iam_member" "pipeline_roles" {
     "roles/cloudbuild.builds.editor",    # Permissão para Cloud Build criar imagens
     "roles/artifactregistry.writer",     # Permissão para gravar no Artifact Registry
     "roles/run.admin",                   # Permissão para implantar no Cloud Run
-    "roles/iam.serviceAccountUser"       # Permissão para atuar como conta de serviço
+    "roles/iam.serviceAccountUser",      # Permissão para atuar como conta de serviço
+    "roles/storage.admin",               # Permissão para utilizar o storage do artifact
+    "roles/viewer"                       # Permissão para visualizar no cloud build
   ])
 
   project = var.project_id

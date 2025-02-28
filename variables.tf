@@ -23,3 +23,7 @@ variable "pipeline_sa_account_id" {
 variable "pipeline_sa_display_name" {
   type = string
 }
+
+variable "repository_id" {
+  type = string
+}
