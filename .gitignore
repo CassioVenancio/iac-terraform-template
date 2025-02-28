@@ -1,0 +1,7 @@
+# Ignorar arquivos que contêm valores sensíveis
+terraform.tfvars
+*.tfstate
+*.tfstate.backup
+.terraform/
+import.sh
+.terraform.lock.hcl
